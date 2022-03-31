@@ -1,0 +1,133 @@
+header .logo{
+  height: 41px;
+  width: 180px; 
+  font-size: 14px;
+}
+
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: MuseoSans-700,sans-serif ;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header{
+  /* position: fixed; */
+  top:0;left:0;right:0;
+  padding: 20px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+header .navbar ul{
+  list-style: none;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+
+}
+  
+header .navbar ul li a{
+  font-size: 14px;
+  padding: 20px;
+  color: #333;
+  display: block;
+}
+header .navbar ul li  a:hover{
+  color:#f37e5d;
+
+}
+header .navbar ul li ul a:hover{
+  color:#333;
+
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+  
+    width: 432px;
+    background-color: white;
+    display: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    
+   
+}
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,1) ;
+ 
+
+}
+header .navbar ul li :focus-within > ul,
+header .navbar ul li:hover > ul{
+  display :initial;
+}
+ 
+    #create_button {
+    border:0px;
+    background: #f37e5d;
+    border-radius: 5px;
+     }
+
+
+     #create_button a {
+  
+    color: white;
+     padding: 18px 20px;
+    min-width: 180px;
+    border-radius: 5px; 
+     }
+    #menu-bar{
+      display:none;
+      
+    }
+    header label{
+      color: #333;
+      cursor: pointer;
+      display: none;
+    }
+ 
+
+
+     @media(max-width:991px){
+   
+       header label{
+         display: initial;
+
+       }
+
+     header .navbar{
+       position: absolute;
+       top:100%; left:0; right:0;
+       background: #fff;
+       border-top:1px solid #000; 
+       display: none;
+      }
+      header .navbar ul li{
+        width:100%
+      }
+      header .navbar ul li ul{
+        position: relative;
+        width:100%;
+     }
+     header .navbar ul li ul li{
+       background: #eee;
+     }
+      header .navbarul li ul li ul{
+        width:100%;
+        left: 0;
+      }
+      #menu-bar:checked ~ .navbar {
+        display: initial;
+      }
+   
+
+
+
+     }

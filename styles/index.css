@@ -1,0 +1,231 @@
+#container_hedings {
+    background-color: #f8f8f8;
+    width:100%;
+  }
+  #container_hedings h1{
+  
+    
+    font-family: MuseoSans-700,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -.3px;
+    line-height: 130%;
+    text-transform: none;
+    margin-top:8%;
+    text-align: center;
+
+    margin-bottom: 0px;
+    line-height: 130%;
+    font-style: italic;
+  }
+
+   #pera_one{
+    font-size: 22px;
+    margin:2%;
+    text-align: center;
+    font-family:MuseoSans-700,sans-serif;;
+    color: #4b4b4b;
+    
+   
+    
+  }
+
+  
+  #container_headings_button{
+    border:0px;
+    background: #f37e5d;
+    border-radius: 5px;
+    height: 50px;
+    color:white;
+    padding: 18px 20px;
+    min-width: 180px;
+    margin-top:2%;
+    cursor: pointer;
+    font-family: MuseoSans-300,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  
+    }
+    #button_p{
+      text-align: center;
+    }
+    #ques{
+      color: #4b4b4b;
+      font-family: MuseoSans-300,sans-serif;
+      margin:3%;
+      text-align: center;
+      font-size: 14px;
+    }
+    #container_headings_img{
+        width: 100%;
+        text-align: center;
+    }
+    #comapany_img{
+      text-align: center;
+    }
+    #container_bodys{
+      background-color: #f8f8f8;
+
+    }
+    #container_bodys h1{
+    text-align: center;
+    font-family: MuseoSans-700,sans-serif;
+    font-weight: 800;
+    letter-spacing: -.3px;
+    line-height: 130%;
+    text-transform: none;
+    margin-top: 5%;
+    font-size: 50px;
+  
+    }
+    #container_bodys h2{
+    font-size: 40px;
+    margin:2%;
+    text-align: center;
+    font-family: MuseoSans-300,sans-serif;
+  }
+  
+    #pera_h2{
+    font-size: 20px;
+    margin:2%;
+    text-align: center;
+    font-family: MuseoSans-300,sans-serif;
+  }
+  #our_pro{
+    display: inline-grid;
+  grid-template-columns: auto auto;
+     grid-gap:3%;
+      text-align: center;  
+      padding: 4%;
+    
+  }
+  #our_pro img{
+    width: 700px;
+    height:700px;
+    width: 100%;
+  }
+  #our_pro button{ 
+    border: none;
+    background: #ecc8bf;
+    border-radius: 5px;
+    height: 50px;
+    color:#f37e5d;
+    padding: 18px 20px;
+    min-width: 180px;
+    margin-top:2%;
+    cursor: pointer;
+    font-family: MuseoSans-300,sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #our_pro div :hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+  #pro_button_one:hover{
+    background-color: #ec571c;
+    color: white;
+  } 
+  #pro_button_two:hover{
+    background-color: #9d36d1;
+    color: white;
+  } 
+  #pro_button_three:hover{
+    background-color: #a84ed4;
+    color: white;
+  } 
+  #pro_button_four:hover{
+    background-color: #531fe4;
+    color: white;
+  } 
+  #add{
+    background-color: #f37e5d;
+    height: 400px;
+    width: 100%;
+    padding: 4%;
+  }
+  #add button{
+    background-color: white;
+    color: #f37e5d;
+  }
+  #add h2{
+     color:white;
+     font-size: 30px;
+  }
+#fortune{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+     grid-gap:3%;
+      text-align: center;  
+      padding: 4%;
+      margin-left: 350px;
+    
+}
+#fortune img{
+height: 300px;
+width: 25%px;
+
+}
+#fortune div :hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+  @media(max-width:991px){
+  img{
+    width:100%;
+  }
+  #container_hedings h1{
+    font-size: 18px;
+  }
+  #pera_one{
+    font-size: 14px;
+  }
+  #container_bodys h1{
+    font-size: 15px;
+    font-weight: 700;
+   
+  }
+  #container_bodys div h1{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+  #pera_h2{
+    font-size: 12px;
+    margin:2%;
+    text-align: center;
+    font-family: MuseoSans-300,sans-serif;
+  }
+
+  #our_pro img{
+   
+    height:400px;
+    width: 100%;
+
+  }
+  #fortune{
+    display: inline-grid;
+    grid-template-columns: auto ;
+       grid-gap:3%;
+        text-align: center;  
+        padding: 4%;
+        margin-left:0px;
+        margin-bottom: 40px;
+         width: 100%;
+      
+}
+
+
+
+
+}
+@media(max-width:800px) {
+    #our_pro{
+        display: inline-grid;
+        grid-template-columns: auto;
+        grid-gap:3%;
+        text-align: center;  
+        padding: 4%;
+        margin-bottom: 50%;
+       
+      }
+      
+}
