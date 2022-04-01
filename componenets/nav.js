@@ -37,7 +37,7 @@ function navbar(){
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="signin.html">Sign In</a></li>
         <li><a href="demo.html">ProductsGet A Demo </a></li>
-        <li><button id="create_button"><a href="create.html">Create My Calender</a></button></li>
+        <li><button id="create_button"><a href="signup.html">Create My Calender</a></button></li>
       </ul>
     </nav>
   </header>`
