@@ -11,13 +11,13 @@ footer{
        grid-template-columns: auto auto auto auto;
        grid-gap:3%;
        text-align: center;  
-       padding: 4%;
+       padding:4%;
        
   
   }
   #footer_divs div{
       width: 90%;
-      height: 400px;
+      height: 300px;
       padding: 2px 0;
       transition: color .3s ease-in-out;
       
@@ -59,4 +59,18 @@ footer{
   }
   #social_media{
     text-align: right;
+  }
+  @media(max-width:991px){
+
+    #footer_divs{
+      display: inline-grid;
+      width: 100%;
+      grid-template-columns: auto;
+      grid-gap:3%;
+      text-align: center;  
+      padding: 4%;
+
+      
+ 
+ }
   }

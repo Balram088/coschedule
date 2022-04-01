@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: #f8f8f8;
+    }
+     #registerForm{
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        width: 32%;
+        margin: 2% 0% 0% 29%;
+        border-radius: 2%;
+        padding: 5%;
+    }
+    #signin_container input{
+       height: 40px;
+       width: 400px;
+       margin-left: 2%;
+   }
+   #signin_container label{
+     margin-left: 2%;
+   }
+   #signin_container h1{
+    font-weight: normal;
+    font-family: "MuseoSans-700",sans-serif;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+   }
+   #signin_container h5{
+       text-align: center;
+       margin: 0;
+   }
+   #submit_button{
+    background-color: #f37e5d;
+    color: white;
+    font-weight: 700;
+    cursor: pointer; 
+    
+   }
+   @media(max-width:991px){
+       body{
+           background-color: white;
+       }
+    #registerForm{
+    
+        margin-right: 20%;
+        background-color: none;
+        box-shadow: none;
+        margin-left: 10%;
+
+       
+       
+   }
+   #signin_container input{
+       height: 40px;
+       width: 180px;
+       margin-right: 50%;
+       margin-left: 0%;
+   }}
+
+</style>
+<body>
+    
+        <div id="signin_container">
+            <div>
+                <h1>Create My Marketing Calendar</h1>
+                  <h5>Free for life. No credit card required.</h5>
+                <form id="registerForm">
+                    <label>Full Name</label><br>
+                    <input type="text" id="name_input" required placeholder="Enter Full Name"/>
+                    <br/><br>
+                    <label>Email Address </label><br>
+                    <input type="email" id="email_input" required placeholder="Work Email Adress"/>
+                    <br/><br>
+                    <label> Company</label><br>
+                    <input type="text" id="company" required placeholder="Enter Company Name"/>
+                    <br/><br>
+                    <label>Website URL </label><br>
+                    <input type="url" id="company_url" required placeholder="Company Website Url"/>
+                    <br/><br>
+                    <label>Password</label><br>
+                    <input type="password" min="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required id="password" placeholder="Password Minimum 8 Characteres"/>
+                    <br/><br>
+                    <input  id="submit_button" type="submit" value="Get Started"/>
+                    <h4>If you Registerd Please go for<a href="signin.html">Sign in </a></h4>
+
+                    <h6>By clicking "Get Started Now", you agree to CoSchedule’s <a href="https://coschedule.com/terms">terms of service, end user agreement</a>, and privacy policy; you are 16 years or older; and you will receive information from CoSchedule from which you can opt out at any time.</h6>    
+                     
+                </form>
+                
+            </div>
+        </div>
+</body>
+</html>
+<script>
+   document.querySelector("form").addEventListener("submit",formSubmit);
+    var userStack = JSON.parse(localStorage.getItem("DB")) || [];
+    function formSubmit(Event) {
+        event.preventDefault();
+        var name = document.querySelector("#name_input ").value;
+        var email = document.querySelector("#email_input ").value;
+        var pass = document.querySelector("#password").value;
+        var company  = document.querySelector("#company ").value;
+        var  url = document.querySelector("#company_url ").value;
+        
+         
+          var userData = {
+            name  :  name,
+            email  :   email,
+            pass   : pass,
+            company : company, 
+            curl  :url ,
+        };
+        userStack.push(userData);
+     
+         
+        
+        localStorage.setItem("DB",JSON.stringify(userStack));
+        alert("Sign Up Success");
+         window.location.href = "signin.html";
+    }
+        //  console.log(userStack);
+        
+  </script>

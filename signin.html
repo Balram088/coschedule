@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: #f8f8f8;
+    }
+     #registerForm{
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        width: 32%;
+        margin: 2% 0% 0% 29%;
+        border-radius: 2%;
+        padding: 5%;
+    }
+    #signin_container input{
+       height: 40px;
+       width: 400px;
+       margin-left: 2%;
+   }
+   #signin_container label{
+     margin-left: 2%;
+   }
+   #signin_container h1{
+    font-weight: normal;
+    font-family: "MuseoSans-700",sans-serif;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -0.3px;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+   }
+   #signin_container h5{
+       text-align: center;
+       margin: 0;
+   }
+   #submit_button{
+    background-color: #f37e5d;
+    color: white;
+    font-weight: 700;
+    cursor: pointer; 
+    
+   }
+   @media(max-width:991px){
+       body{
+           background-color: white;
+       }
+    #registerForm{
+    
+        margin-right: 20%;
+        background-color: none;
+        box-shadow: none;
+        margin-left: 10%;
+
+       
+       
+   }
+   #signin_container input{
+       height: 40px;
+       width: 180px;
+       margin-right: 50%;
+       margin-left: 0%;
+   }}
+
+</style>
+<body>
+    
+        <div id="signin_container">
+            <div>
+                <h1>Create My Marketing Calendar</h1>
+                  <h5>Free for life. No credit card required.</h5>
+                <form id="registerForm">
+                   
+                    <label>Email Address </label><br>
+                    <input type="email" id="email_input" required placeholder="Work Email Adress"/>
+                    <br/><br>
+                    <label>Password</label><br>
+                    <input type="password" min="8"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required id="password" placeholder="Password Minimum 8 Characteres"/>
+                    <br/><br>
+                    <input  id="submit_button" type="submit" value="Get Started"/>
+                    <h4>If you Not Registerd Please<a href="signup.html">Sign Up </a> first</h4>
+
+                </form>
+                
+            </div>
+        </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",login);
+
+var regdUsers =  JSON.parse(localStorage.getItem("DB")) ;
+
+
+function login(event) {
+    event.preventDefault();
+ //  console.log(regdUsers);
+  // var email = document.querySelector("#email").value;
+    var pass = document.querySelector("#password").value;
+    var email = document.querySelector("#email_input").value;
+    var flag=false;
+     for(var i = 0; i < regdUsers.length ; i++) {
+        //console.log(regdUsers[i].userName);
+         
+        if(regdUsers[i].email == email &&  regdUsers[i].pass == pass )
+        {
+            flag=true;
+         }
+      
+    }
+    if(flag == true)
+       {
+          
+              console.log("hello you have to login");
+              
+              window.location.href ="index.html";
+            //   alert("You are success fully Loged in");
+   
+            }
+      else {
+              alert("Plese Enter currect Password and User Name");
+           }
+}
+  </script>

@@ -9,8 +9,8 @@ function navbar(){
       <ul>
         <li> <a href="#">Products</a>
           <ul>
-            <li><a href="#"><img src="./images/marketing_calender_menu.png" alt=""></a> </li>
-            <li><a href="#"><img src="./images/marketing_suit_menu.png" alt=""></a></li>
+            <li><a href="marketing_product.html"><img src="./images/marketing_calender_menu.png" alt=""></a> </li>
+            <li><a href="index.html"><img src="./images/marketing_suit_menu.png" alt=""></a></li>
           </ul>
         </li>
   
@@ -28,9 +28,9 @@ function navbar(){
         </li>
         <li> <a href="#">Resorces</a>
           <ul>
-            <li><a href="#"><img src="./images/cb.png" alt=""></a> </li>
-            <li><a href="#"><img src="./images/cg.png" alt=""></a></li>
-            <li><a href="#"><img src="./images/ih.png" alt=""></a></li>
+            <li><a href="https://coschedule.com/blog"><img src="./images/cb.png" alt=""></a> </li>
+            <li><a href="https://coschedule.com/blog"><img src="./images/cg.png" alt=""></a></li>
+            <li><a href="https://coschedule.com/marketing-ideas"><img src="./images/ih.png" alt=""></a></li>
   
           </ul>
         </li>
