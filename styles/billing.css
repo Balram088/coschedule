@@ -1,0 +1,76 @@
+body{
+    background-color:#f8f8f8;
+ }
+
+ #billing_div h1{
+height: 70px;
+width: 240px; 
+margin-left: 50%; 
+} 
+#bill div h1 img{
+
+ width:40px;
+ height: 40px;
+} 
+
+#billing_div p{
+ font-size: 24px;
+ margin-left: 20px;
+}
+#bill div{
+ background-color: white;
+ border: 1px solid  #f37e5d;
+ margin: 2%;
+ padding: 5%;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#bill div div {
+ padding: 0px;
+ padding-top: 50px;
+ background-color: #f37e5d;
+ margin-top: 100px;
+}
+#bill div  p{
+ margin-right: 30%;
+}
+#bill{
+
+display: inline-grid;
+grid-template-columns: auto auto;
+   grid-gap:3%;
+    text-align: center;  
+    padding: 1%;
+    margin-left:0px;
+    margin-bottom: 40px;
+     width: 100%;
+}
+#bill div h2 span input{
+ height: 50px;
+ width: 100px;
+ background-color:#f37e5d;
+ color: white;
+ font-size: 40px;
+}
+#Amount{
+ color: #f37e5d;
+}
+#total{
+ color: #f37e5d;
+}
+#per_sankhya{
+ color: #f37e5d;
+}
+@media (max-width: 800px){
+ #bill{
+
+display: inline-grid;
+grid-template-columns: auto;
+   grid-gap:3%;
+    text-align: center;  
+    padding: 1%;
+    margin-left:0px;
+    margin-bottom: 40px;
+     width: 100%;
+}
+
+}
