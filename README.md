@@ -20,7 +20,7 @@ Pages Build :
 
 * Pricing
 <img src="https://miro.medium.com/max/630/1*kp7Alwy5mlJRge4YASapow.png"/>
-* Cart Page
+* Login Page
 <img src="https://miro.medium.com/max/588/1*UOh9ztHwnA6euwIdZ4VI_Q.png"  />
 
 Expectations:
